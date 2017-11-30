@@ -10,8 +10,8 @@ import org.jetbrains.spek.api.dsl.on
  *
  * This test is a bit more efficient than {@see Fizzbuzz3GeneratedKotlinParameterSpec}
  *
- * To be honest this feels a lot like reimplementing the class under test, but it's most likely because it's such a simple
- * example.
+ * To be honest this one feels a lot like reimplementing the class under test,
+ * but it's most likely because it's such a simple example.
  */
 class Fizzbuzz3AnotherGeneratedKotlinParameterSpec : Spek({
     val fizzOutput = "Fizz"
@@ -33,7 +33,7 @@ class Fizzbuzz3AnotherGeneratedKotlinParameterSpec : Spek({
                         }
                     }
                 }
-                it % 3 == 0 && it % 5 == 0 -> given("number $it") {
+                it % 3 == 0 && it % 5 == 0 -> given("number $it (divisible by 3 and 5)") {
                     on("converting number $it to fizzbuzz") {
                         val actualString by memoized { fizzbuzz.toString(it) }
 
@@ -42,7 +42,7 @@ class Fizzbuzz3AnotherGeneratedKotlinParameterSpec : Spek({
                         }
                     }
                 }
-                it % 5 == 0 -> given("number $it") {
+                it % 5 == 0 -> given("number $it (divisible by 5 but not by 3)") {
                     on("converting number $it to fizzbuzz") {
                         val actualString by memoized { fizzbuzz.toString(it) }
 
@@ -51,7 +51,7 @@ class Fizzbuzz3AnotherGeneratedKotlinParameterSpec : Spek({
                         }
                     }
                 }
-                it % 3 == 0 -> given("number $it") {
+                it % 3 == 0 -> given("number $it (divisible by 3 but not by 5)") {
                     on("converting number $it to fizzbuzz") {
                         val actualString by memoized { fizzbuzz.toString(it) }
 
@@ -60,7 +60,7 @@ class Fizzbuzz3AnotherGeneratedKotlinParameterSpec : Spek({
                         }
                     }
                 }
-                else -> given("number $it") {
+                else -> given("number $it (not divisible by 5 or 3)") {
                     on("converting number $it to fizzbuzz") {
                         val actualString by memoized { fizzbuzz.toString(it) }
 
