@@ -5,6 +5,9 @@ import org.jetbrains.spek.api.dsl.it
 import org.jetbrains.spek.data_driven.data
 import org.jetbrains.spek.data_driven.on
 
+/**
+ * Black-box testing. Uses Spek's data driven extension
+ */
 class Fizzbuzz3DataDrivenExtensionSpec : Spek({
     val fizzOutput = "Fizz"
     val buzzOutput = "Buzz"
