@@ -1,3 +1,5 @@
+package fizzbuzz
+
 class Fizzbuzz0 : FizzBuzzPrinter {
 
     override fun toString(number: Int): String {

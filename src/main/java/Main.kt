@@ -1,3 +1,5 @@
+import fizzbuzz.*
+
 fun main(args: Array<String>) {
 
     val fizzbuzz0 = Fizzbuzz0()

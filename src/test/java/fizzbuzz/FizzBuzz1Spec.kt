@@ -1,6 +1,10 @@
+package fizzbuzz
+
 import org.amshove.kluent.*
 import org.jetbrains.spek.api.Spek
-import org.jetbrains.spek.api.dsl.*
+import org.jetbrains.spek.api.dsl.given
+import org.jetbrains.spek.api.dsl.it
+import org.jetbrains.spek.api.dsl.on
 
 class FizzBuzz1Spec : Spek({
     val testNumber = 1

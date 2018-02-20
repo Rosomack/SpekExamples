@@ -1,3 +1,5 @@
+package fizzbuzz
+
 import org.amshove.kluent.`should equal to`
 import org.jetbrains.spek.api.Spek
 import org.jetbrains.spek.api.dsl.given
@@ -8,7 +10,7 @@ import org.jetbrains.spek.api.dsl.on
 /**
  * This demonstrates another way to use kotlin to generate test cases for us.
  *
- * This test is a bit more efficient than {@see Fizzbuzz3GeneratedKotlinParameterSpec}
+ * This test is a bit more efficient than {@see fizzbuzz.Fizzbuzz3GeneratedKotlinParameterSpec}
  *
  * To be honest this one feels a lot like reimplementing the class under test,
  * but it's most likely because it's such a simple example.

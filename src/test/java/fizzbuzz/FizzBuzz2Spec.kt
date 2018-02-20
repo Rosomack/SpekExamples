@@ -1,9 +1,10 @@
+package fizzbuzz
+
 import org.amshove.kluent.*
 import org.jetbrains.spek.api.Spek
 import org.jetbrains.spek.api.dsl.given
 import org.jetbrains.spek.api.dsl.it
 import org.jetbrains.spek.api.dsl.on
-import org.jetbrains.spek.api.lifecycle.CachingMode
 
 class FizzBuzz2Spec : Spek({
     val testNumber = 1

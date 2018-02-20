@@ -1,3 +1,5 @@
+package fizzbuzz
+
 class Fizzbuzz1(private val divisibilityBy3Tester: NumberTester) : FizzBuzzPrinter {
 
     override fun toString(number: Int): String {

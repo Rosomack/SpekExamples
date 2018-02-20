@@ -1,3 +1,5 @@
+package fizzbuzz
+
 import org.amshove.kluent.`should equal to`
 import org.jetbrains.spek.api.Spek
 import org.jetbrains.spek.api.dsl.given
@@ -9,7 +11,7 @@ import org.jetbrains.spek.api.dsl.on
  *
  * This test is not super efficient but does the job.
  *
- * It seems also like a slithly awkward implementation. See {@see Fizzbuzz3AnotherGeneratedKotlinParameterSpec}
+ * It seems also like a slithly awkward implementation. See {@see fizzbuzz.Fizzbuzz3AnotherGeneratedKotlinParameterSpec}
  */
 class Fizzbuzz3GeneratedKotlinParameterSpec : Spek({
     val fizzOutput = "Fizz"

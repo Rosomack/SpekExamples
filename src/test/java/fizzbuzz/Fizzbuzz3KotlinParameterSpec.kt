@@ -1,3 +1,5 @@
+package fizzbuzz
+
 import org.amshove.kluent.`should equal to`
 import org.jetbrains.spek.api.Spek
 import org.jetbrains.spek.api.dsl.given
@@ -7,7 +9,7 @@ import org.jetbrains.spek.api.dsl.on
 /**
  * Black-box testing. Uses a kotlin foreach loop.
  *
- * I don't see a big reason for using Spek's data driven extension {@see Fizzbuzz3DataDrivenExtensionSpec}.
+ * I don't see a big reason for using Spek's data driven extension {@see fizzbuzz.Fizzbuzz3DataDrivenExtensionSpec}.
  * What little it offers can be done effortlessly using
  * pure Kotlin. In fact, it demonstrates that a lot of what used to be difficult JUnit can be achieved easily using
  * no frameworks. The test (spec) is in fact a pure lambda function, it liberates us from framework constraints.
