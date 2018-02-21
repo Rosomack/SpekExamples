@@ -28,7 +28,7 @@ class Fizzbuzz3AnotherGeneratedKotlinParameterSpec : Spek({
             when {
                 it == 15 -> given("number $it") {
                     on("converting number $it to fizzbuzz") {
-                        val actualString by memoized { fizzbuzz.toString(it) }
+                        val actualString = fizzbuzz.toString(it)
 
                         it("returns foobar") {
                             actualString `should equal to` foobarOutput
@@ -37,7 +37,7 @@ class Fizzbuzz3AnotherGeneratedKotlinParameterSpec : Spek({
                 }
                 it % 3 == 0 && it % 5 == 0 -> given("number $it (divisible by 3 and 5)") {
                     on("converting number $it to fizzbuzz") {
-                        val actualString by memoized { fizzbuzz.toString(it) }
+                        val actualString = fizzbuzz.toString(it)
 
                         it("returns fizzbuzz") {
                             actualString `should equal to` fizzbuzzOutput
@@ -46,7 +46,7 @@ class Fizzbuzz3AnotherGeneratedKotlinParameterSpec : Spek({
                 }
                 it % 5 == 0 -> given("number $it (divisible by 5 but not by 3)") {
                     on("converting number $it to fizzbuzz") {
-                        val actualString by memoized { fizzbuzz.toString(it) }
+                        val actualString = fizzbuzz.toString(it)
 
                         it("returns buzz") {
                             actualString `should equal to` buzzOutput
@@ -55,7 +55,7 @@ class Fizzbuzz3AnotherGeneratedKotlinParameterSpec : Spek({
                 }
                 it % 3 == 0 -> given("number $it (divisible by 3 but not by 5)") {
                     on("converting number $it to fizzbuzz") {
-                        val actualString by memoized { fizzbuzz.toString(it) }
+                        val actualString = fizzbuzz.toString(it)
 
                         it("returns fizz") {
                             actualString `should equal to` fizzOutput
@@ -64,7 +64,7 @@ class Fizzbuzz3AnotherGeneratedKotlinParameterSpec : Spek({
                 }
                 else -> given("number $it (not divisible by 5 or 3)") {
                     on("converting number $it to fizzbuzz") {
-                        val actualString by memoized { fizzbuzz.toString(it) }
+                        val actualString = fizzbuzz.toString(it)
 
                         it("returns \"$it\"") {
                             actualString `should equal to` it.toString()

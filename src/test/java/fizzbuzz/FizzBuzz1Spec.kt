@@ -19,7 +19,7 @@ class FizzBuzz1Spec : Spek({
         }
 
         on("translating the number to string") {
-            val actual by memoized { fizzbuzz.toString(testNumber) }
+            val actual = fizzbuzz.toString(testNumber)
 
             it("returns fizz") {
                 actual `should equal to` fizzOutput
@@ -34,7 +34,7 @@ class FizzBuzz1Spec : Spek({
         }
 
         on("translating the number to string") {
-            val actual by memoized { fizzbuzz.toString(testNumber) }
+            val actual = fizzbuzz.toString(testNumber)
 
             it("returns the number string") {
                 actual `should equal to` testNumber.toString()

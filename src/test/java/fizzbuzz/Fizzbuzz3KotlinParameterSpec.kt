@@ -61,7 +61,7 @@ class Fizzbuzz3KotlinParameterSpec : Spek({
 
         testData.forEach { (number, expectedString) ->
             on("converting number $number to fizzbuzz") {
-                val actualString by memoized { fizzbuzz.toString(number) }
+                val actualString = fizzbuzz.toString(number)
 
                 it("returns $expectedString") {
                     actualString `should equal to` expectedString

@@ -33,7 +33,7 @@ class Fizzbuzz3GeneratedKotlinParameterSpec : Spek({
 
                 numbersDivBy3And5Not15.forEach {
                     on("converting number $it to fizzbuzz") {
-                        val actualString by memoized { fizzbuzz.toString(it) }
+                        val actualString = fizzbuzz.toString(it)
 
                         it("returns fizzbuzz") {
                             actualString `should equal to` fizzbuzzOutput
@@ -44,7 +44,7 @@ class Fizzbuzz3GeneratedKotlinParameterSpec : Spek({
 
             given("it's the number 15") {
                 on("converting number 15 to fizzbuzz") {
-                    val actualString by memoized { fizzbuzz.toString(15) }
+                    val actualString = fizzbuzz.toString(15)
 
                     it("returns foobar") {
                         actualString `should equal to` foobarOutput
@@ -58,7 +58,7 @@ class Fizzbuzz3GeneratedKotlinParameterSpec : Spek({
 
             numbersDivBy3AndNotBy5.forEach {
                 on("converting number $it to fizzbuzz") {
-                    val actualString by memoized { fizzbuzz.toString(it) }
+                    val actualString = fizzbuzz.toString(it)
 
                     it("returns fizz") {
                         actualString `should equal to` fizzOutput
@@ -76,7 +76,7 @@ class Fizzbuzz3GeneratedKotlinParameterSpec : Spek({
 
             numbersDivBy5AndNotBy3.forEach {
                 on("converting number $it to fizzbuzz") {
-                    val actualString by memoized { fizzbuzz.toString(it) }
+                    val actualString = fizzbuzz.toString(it)
 
                     it("returns fizz") {
                         actualString `should equal to` buzzOutput
@@ -94,7 +94,7 @@ class Fizzbuzz3GeneratedKotlinParameterSpec : Spek({
 
             numbersNotDivBy5AndNotBy3.forEach {
                 on("converting number $it to fizzbuzz") {
-                    val actualString by memoized { fizzbuzz.toString(it) }
+                    val actualString = fizzbuzz.toString(it)
 
                     it("returns \"$it\"") {
                         actualString `should equal to` it.toString()
